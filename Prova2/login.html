@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desporto 4</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="cabeça">
+            <a href="#">Sportfour</a>
+            <nav class="menu" onclick="openMenu()">
+                <h1 class="hamb" id="hamb1">__</h1>
+                <h1 class="hamb" id="hamb2">__</h1>
+                <h1 class="hamb" id="hamb3">__</h1>
+            </nav>  
+            <nav class="menu1" onclick="closeMenu()">
+                <h1 class="hamb" id="hamb4">X</h1>
+            </nav>  
+            <nav class="navbar1">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="desportos.html">Desporto</a></li>
+                    <li><a href="apostas.html">Apostas</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav> 
+        </div>
+        <h1>Login</h1>
+       <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="desportos.html">Desporto</a></li>
+                <li><a href="apostas.html">Apostas</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="Faça">Faça aqui o seu login</h1>
+        <div class="logincontainer">
+            <h2>Login</h2>
+            <form action="" method="get" id="loginform">
+             <div id="inputs">
+                <P id="erro"></P>
+                <label for="txtnome">Nome</label>
+                <input type="text" name="txtnome" id="txtnome" placeholder="Digite o seu nome">
+             </div>
+             <div id="inputs">
+                <label for="txtemail">Email</label>
+                <input type="email" name="txtemail" id="txtemail" placeholder="Digite o seu email">
+             </div>
+             <div id="inputs">
+                <label for="txtsenha">Senha</label>
+                <input type="password" name="txtsenha" id="txtsenha" placeholder="Digite a sua senha">
+             </div>
+             <p>Esqueceu a Senha?</p>
+             <input type="button" value="Entrar" id="botao" onclick="validarform()">
+             </form>
+        </div>
+    </main>
+
+    <footer>
+        Todos direitos reservados 2025 &copy; <span>Sportfour</span>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
